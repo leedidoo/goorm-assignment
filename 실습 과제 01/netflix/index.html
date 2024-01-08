@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix-like Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+
+    .main-poster {
+      background-image: url('assets/images/TRIPLE.jpg'); /* 대형 포스터 이미지 경로로 변경 */
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* 뷰포트 높이에 맞게 설정 */
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      color: white;
+      font-size: 2em;
+    }
+
+    .main-content {
+      color: white;
+      text-align: left;
+      max-width: 300px; /* 텍스트 및 버튼의 최대 너비 설정 */
+      margin-right: 20px; /* 텍스트 및 버튼과 포스터 사이의 간격 설정 */
+    }
+
+    .main-content h2 {
+      font-size: 0.5em;
+      margin-bottom: 10px;
+    }
+
+    .main-button-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .main-button {
+      padding: 10px 20px;
+      font-size: 0.5em;
+      background-color: rgba(255, 255, 255, 0.5); /* 약간 투명한 흰색 배경 설정 */
+      color: #141414; /* 글자색을 어두운 색으로 설정 */
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+
+    .additional-text {
+      margin-top: 20px;
+      font-size: 0.5em;
+      
+    }
+
+    .netflix-logo {
+      width: 50px; /* 로고의 너비 조절 */
+      height: auto; /* 높이 자동 조절 */
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .profile-icon {
+      width: 30px; /* 로고의 너비 조절 */
+      height: auto; /* 높이 자동 조절 */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .small-posters {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: black;
+    }
+
+    .small-poster {
+      width: 100px; /* 작은 포스터 너비 조절 */
+      height: 150px; /* 작은 포스터 높이 조절 */
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .small-poster:hover {
+      transform: scale(2.2); /* 호버 시 확대 효과 */
+    }
+
+    .boundary{
+      color: white;
+      background-color: black ;
+    }
+    .boundary h2 {
+      font-size: 0.5em;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="main-poster">
+    <img class="netflix-logo" src="assets/images/Netflix-Logo.jpg" alt="Netflix Logo">
+    <img class="profile-icon" src="assets/images/profile-yellow.jpg" alt="Profile Icon">
+    <div class="main-content" >
+        <h2>TRIPLE 9</h2>
+        <div class="main-button-container">
+          <a href="#" class="main-button">Play</a>
+          <a href="#" class="main-button">My List</a>
+        </div>
+        <p class="additional-text">A gang of criminals and corrupt cops plan the murder of a police officer in order to pull off their biggest heist yet across town.</p>
+      </div>
+    
+  </div>
+  <div class="boundary">
+    <h4>NETFLIX ORIGINALS</h4>
+  </div>
+
+  <div class="small-posters">
+    <!-- 작은 포스터들 추가 -->
+    <div class="small-poster" style="background-image: url(assets/images/8월의\ 크리스마스.jpeg);"></div>
+    <div class="small-poster" style="background-image: url(assets/images/마션.jpeg);"></div>
+    <div class="small-poster" style="background-image: url('assets/images/베테랑.jpg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/부산행.jpg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/조커.jpeg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/타이타닉.jpg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/어벤져스.jpeg');"></div>
+  </div>
+
+  <div class="boundary">
+    <h4>Trending Now</h4>
+  </div>
+
+  <div class="small-posters">
+    <!-- 작은 포스터들 추가 -->
+    <div class="small-poster" style="background-image: url(assets/images/해리포타.jpeg);"></div>
+    <div class="small-poster" style="background-image: url(assets/images/사자.jpeg);"></div>
+    <div class="small-poster" style="background-image: url('assets/images/신세계.jpeg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/어벤져스.jpeg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/베테랑.jpg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/마션.jpeg');"></div>
+    <div class="small-poster" style="background-image: url('assets/images/조커.jpeg');"></div>
+  </div>
+</body>
+</html>
