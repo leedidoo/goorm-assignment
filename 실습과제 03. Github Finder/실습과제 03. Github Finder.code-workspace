@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../실습과제 02. TodoApp"
+		},
+		{
+			"path": "../../자바스크립트 심화 강의"
+		},
+		{
+			"path": "../../4.js-githubfinder-app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "실습과제 03. Github Finder"
+	}
+}
