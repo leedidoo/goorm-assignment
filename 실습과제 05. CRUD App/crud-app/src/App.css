@@ -1,0 +1,93 @@
+.container{
+  margin: auto;
+  max-width: 600px;
+  
+}
+
+.expenseForm{
+  padding: 30px;
+  margin-top: 10px;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+}
+
+.btn{
+  background: green;
+  border: none;
+  color: white;
+
+}
+
+.expenseList{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.form-center {
+  display: flex;
+}
+.form-group {
+  padding: 1rem 0.75rem;
+  flex: 1;
+}
+label {
+  display: block;
+  color:	#f4a460;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid 	#f4a460;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+.item {
+  background-color: #fff;
+  line-height: 1.5rem;
+  width: 90%;
+  margin: 0 auto; /* 가로 중앙 정렬을 위해 추가 */
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+}
+
+
+.info {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense {
+  margin-right: 2rem;
+}
+
+.amount {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1px 3px;
+}
+
+.edit-btn,
+.clear-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.clear-btn {
+  color: 	#ff7f50;
+}
+.edit-btn {
+  color: #6495ed;
+}
